@@ -28,14 +28,11 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Sample Note Schema
-import mongoose from "mongoose";
-
+// ✅ Sample Note Schema & Model
 const noteSchema = new mongoose.Schema({
   title: String,
   content: String,
 });
-
 const Note = mongoose.model("Note", noteSchema);
 
 // API Routes
