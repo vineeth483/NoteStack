@@ -23,7 +23,7 @@ const app = express();
 
 // ✅ Add CORS middleware here
 app.use(cors({
-  origin: "https://note-stack-yauehgm1s-vineethbammidis-projects.vercel.app", // 🔁 Change to your actual frontend URL
+  origin: "https://note-stack-six.vercel.app", // 🔁 Change to your actual frontend URL
   credentials: true,
 }));
 
