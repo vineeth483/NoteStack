@@ -37,7 +37,7 @@ const NoteDetailPage = () => {
 
     try {
 
-      await api.delete(`/api/notes/${id}`);
+      await api.delete(`/notes/${id}`);
 
       toast.success("Note deleted");
       navigate("/");
@@ -57,7 +57,7 @@ const NoteDetailPage = () => {
 
     try {
 
-      await api.put(`/api/notes/${id}`, note);
+      await api.put(`/notes/${id}`, note);
 
       toast.success("Note updated successfully");
       navigate("/");
