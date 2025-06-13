@@ -23,7 +23,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://note-stack-six.vercel.app",
+  origin: "https://notestack-frontend.onrender.com",
   credentials: true,
 }));
 app.use(express.json());

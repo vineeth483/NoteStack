@@ -16,7 +16,7 @@ const __dirname = path.resolve();
 // ✅ Updated CORS setup
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://note-stack-oi41.vercel.app" // replace if your frontend is deployed elsewhere
+  "https://notestack-frontend.onrender.com" // replace if your frontend is deployed elsewhere
 ];
 
 app.use(
