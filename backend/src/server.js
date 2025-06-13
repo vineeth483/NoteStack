@@ -33,13 +33,13 @@ app.use(rateLimiter);
 app.use("/api/notes", notesRoutes);
 
 // serve frontend in production
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
-  });
-}
+// if (process.env.NODE_ENV === "production") {
+//  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+//
+//  app.get("*", (req, res) => {
+  //  res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
+ // });
+//}
 
 connectDB().then(() => {
   app.listen(PORT, () => {
