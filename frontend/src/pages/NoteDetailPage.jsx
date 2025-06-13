@@ -18,7 +18,7 @@ const NoteDetailPage = () => {
     const fetchNote = async () => {
       try {
 
-        const res = await api.get(`/api/notes/${id}`);
+        const res = await api.get(`/notes/${id}`);
 
         setNote(res.data);
       } catch (error) {
